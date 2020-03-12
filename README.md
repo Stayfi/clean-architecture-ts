@@ -38,9 +38,9 @@ https://github.com/Stayfi/nodejs-server
 
 ./src/ComponentInterfaces: Clean architecture Interfaces, to represent the Uncle Bob's interfaces schema
 
-![Uncle Bob's schema](./img/uncle_bob_interfaces_schema.png)
+![Uncle Bob's schema](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/uncle_bob_interfaces_schema.png)
 
-![Folder ComponentInterfaces](./img/folder_componentinterfaces.png)
+![Folder ComponentInterfaces](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/folder_componentinterfaces.png)
 
 ---
 
@@ -54,7 +54,7 @@ https://github.com/Stayfi/nodejs-server
 
 ./src/Components/UseCases/createUser: "create user" use case for "User" feature
 
-![Folder ComponentInterfaces](./img/folder_components_user.png)
+![Folder ComponentInterfaces](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/folder_components_user.png)
 
 ---
 
@@ -62,19 +62,19 @@ https://github.com/Stayfi/nodejs-server
 
 ./src/FrameworkAndDrivers/DB/MongoDB: MongoDB implementatin with connexion and repositories
 
-![Folder ComponentInterfaces](./img/folder_frameworkanddrivers_db.png)
+![Folder ComponentInterfaces](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/folder_frameworkanddrivers_db.png)
 
 ---
 
 ./src/FrameworkAndDrivers/Web/express: Node.js server with express ( https://github.com/Stayfi/nodejs-server )
 
-![Folder ComponentInterfaces](./img/folder_frameworkanddrivers_web.png)
+![Folder ComponentInterfaces](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/folder_frameworkanddrivers_web.png)
 
 ---
 
 ## Implementation schema
 
-![Folder ComponentInterfaces](./img/uncle_bob_layers_schema.png)
+![Folder ComponentInterfaces](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/uncle_bob_layers_schema.png)
 
 * Initialize the view to render viewModel datas with nunjucks template
 ```
@@ -106,7 +106,7 @@ https://github.com/Stayfi/nodejs-server
 ./src/Components/User/InterfaceAdapters/createUserPresenter.ts
 ```
 
-![Folder ComponentInterfaces](./img/uncle_bob_implementation.png)
+![Folder ComponentInterfaces](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/uncle_bob_implementation.png)
 
 ## Install
 
