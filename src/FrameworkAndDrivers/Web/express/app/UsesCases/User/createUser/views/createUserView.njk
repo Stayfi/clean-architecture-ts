@@ -1,0 +1,26 @@
+{% extends "views/base.njk" %}
+
+{% block body %}
+
+<div class="container">
+  <form action="/" method="POST">
+    <div class="input-field col s6">
+      <h4 class="header">Welcome to Clean Architecture</h4>
+      <h6>With Typescript and Express server</h6>
+      <mat-form-field>
+        <mat-label></mat-label>
+        <input placeholder="Email" id="email" name="email" type="email" class="validate">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label></mat-label>
+        <input placeholder="Password" id="password" name="password" type="password" class="validate">
+      </mat-form-field>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Save
+          <i class="material-icons right">send</i>
+        </button>
+      <div class="card-panel teal  lighten-2 {{ "" if success_message else "hide" }}">{{ success_message }}</div>
+      <div class="card-panel red  lighten-2 {{ "" if error_message else "hide" }}">{{ error_message }}</div>
+    </div>
+  </form>
+</div>
+{% endblock %}

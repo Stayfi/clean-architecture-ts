@@ -1,0 +1,4 @@
+{
+  "port": 8080,
+  "mongodbURI": "mongodb://192.168.99.100/login"
+}

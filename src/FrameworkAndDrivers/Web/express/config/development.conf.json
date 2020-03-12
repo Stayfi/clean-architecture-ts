@@ -1,0 +1,5 @@
+{
+  "logger": true,
+  "port": 3000,
+  "mongodbURI": "mongodb://192.168.99.100/login_dev"
+}

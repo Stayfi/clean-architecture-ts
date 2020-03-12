@@ -1,0 +1,78 @@
+{
+  "rulesDirectory": [
+    "tslint-config-prettier",
+    "tslint-config-security",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": true,
+    "array-type": [
+      false
+    ],
+    "arrow-parens": false,
+    "class-name": true,
+    "label-position": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "max-line-length": [
+      true,
+      {
+        "limit": 80,
+        "ignore-pattern": "^import [^,]+ from |^export | implements"
+      }
+    ],
+    "no-arg": true,
+    "no-console": false,
+    "no-debugger": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-non-null-assertion": false,
+    "no-string-literal": false,
+    "no-unsafe-finally": true,
+    "no-var-keyword": true,
+    "no-var-requires": false,
+    "only-arrow-functions": [
+      true,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "ordered-imports": false,
+    "prefer-for-of": true,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": true,
+    "switch-default": true,
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "unified-signatures": true,
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "./src/**/*.spec.ts"
+    ]
+  }
+}
