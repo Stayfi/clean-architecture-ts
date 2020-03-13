@@ -1,6 +1,6 @@
 import CreateUserPresenter from '../CreateUserPresenter';
 import ICreateUserView from '../ICreateUserView';
-import ICreateUserResponseModel from '../../UseCases/User/createUser/ICreateUserResponseModel';
+import ICreateUserResponseModel from '../../../UseCases/createUser/ICreateUserResponseModel';
 import ICreateUserViewModel from '../ICreateUserViewModel';
 import * as testIncludes from './CreateUserPresenter.spec.inc';
 

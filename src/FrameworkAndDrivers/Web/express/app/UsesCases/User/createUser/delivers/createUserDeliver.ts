@@ -1,9 +1,9 @@
 import express from 'express';
 import ActionViewInterface from '../../../../_shared/action-view.interface';
-import CreateUserController from '../../../../../../../../Components/User/InterfaceAdapters/CreateUserController';
-import ICreateUserEntityGateway from '../../../../../../../../Components/User/UseCases/User/createUser/ICreateUserEntityGateway';
+import CreateUserController from '../../../../../../../../Components/User/InterfaceAdapters/createUser/CreateUserController';
+import ICreateUserEntityGateway from '../../../../../../../../Components/User/UseCases/createUser/ICreateUserEntityGateway';
 import IView from '../../../../../../../../ComponentInterfaces/InterfaceAdapters/IView';
-import CreateUserControllerRequestModel from '../../../../../../../../Components/User/InterfaceAdapters/ICreateUserControllerRequest';
+import CreateUserControllerRequestModel from '../../../../../../../../Components/User/InterfaceAdapters/createUser/ICreateUserControllerRequest';
 import UserEntityRepository from '../../../../../../../DB/MongoDB/User/UserEntityRepository';
 import { View } from '../views/createUserView';
 

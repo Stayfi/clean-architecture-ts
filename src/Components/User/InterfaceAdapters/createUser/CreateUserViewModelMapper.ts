@@ -1,4 +1,4 @@
-import ICreateUserResponseModel from '../UseCases/User/createUser/ICreateUserResponseModel';
+import ICreateUserResponseModel from '../../UseCases/createUser/ICreateUserResponseModel';
 
 export default class CreateUserViewModelMapper {
   static mapFromCreateUserResponseModel(

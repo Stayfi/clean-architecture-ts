@@ -1,5 +1,5 @@
 import CreateUserRequestModelType from './ICreateUserRequestModel';
-import IControllerInputBoundary from '../../../../../ComponentInterfaces/InterfaceAdapters/IControllerInputBoundary';
+import IControllerInputBoundary from '../../../../ComponentInterfaces/InterfaceAdapters/IControllerInputBoundary';
 /*
 import ICreateUserEntityGateway from './ICreateUserEntityGateway';
 import ICreateUserView from '../../InterfaceAdapters/ICreateUserView';

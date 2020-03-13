@@ -1,5 +1,5 @@
-import UserEntity from '../../Entities/UserEntity';
-import ICreateUserEntityGateway from '../../UseCases/User/createUser/ICreateUserEntityGateway';
+import UserEntity from '../../../Entities/UserEntity';
+import ICreateUserEntityGateway from '../../../UseCases/createUser/ICreateUserEntityGateway';
 import ICreateUserView from '../ICreateUserView';
 import ICreateUserViewModel from '../ICreateUserViewModel';
 

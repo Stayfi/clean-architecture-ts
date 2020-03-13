@@ -1,7 +1,7 @@
-import ICreateUserRequestModel from '../UseCases/User/createUser/ICreateUserRequestModel';
+import ICreateUserRequestModel from '../../UseCases/createUser/ICreateUserRequestModel';
 import CreateUserControllerRequest from './ICreateUserControllerRequest';
-import ICreateUserEntityGateway from '../UseCases/User/createUser/ICreateUserEntityGateway';
-import CreateUserInteractor from '../UseCases/User/createUser/CreateUserInteractor';
+import ICreateUserEntityGateway from '../../UseCases/createUser/ICreateUserEntityGateway';
+import CreateUserInteractor from '../../UseCases/createUser/CreateUserInteractor';
 import ICreateUserView from './ICreateUserView';
 import CreateUserPresenter from './CreateUserPresenter';
 

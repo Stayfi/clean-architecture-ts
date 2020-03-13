@@ -1,6 +1,6 @@
-import ICreateUserPresenterOutputBoundary from '../UseCases/User/createUser/ICreateUserPresenterOutputBoundary';
+import ICreateUserPresenterOutputBoundary from '../../UseCases/createUser/ICreateUserPresenterOutputBoundary';
 import ICreateUserView from './ICreateUserView';
-import ICreateUserResponseModel from '../UseCases/User/createUser/ICreateUserResponseModel';
+import ICreateUserResponseModel from '../../UseCases/createUser/ICreateUserResponseModel';
 import ICreateUserViewModel from './ICreateUserViewModel';
 import CreateUserViewModelMapper from './CreateUserViewModelMapper';
 

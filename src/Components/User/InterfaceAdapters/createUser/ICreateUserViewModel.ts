@@ -1,4 +1,4 @@
-import IViewModel from '../../../ComponentInterfaces/InterfaceAdapters/IViewModel';
+import IViewModel from '../../../../ComponentInterfaces/InterfaceAdapters/IViewModel';
 
 export default interface ICreateUserViewModel extends IViewModel {
   userCreated: boolean;

@@ -1,8 +1,8 @@
 import CreateUserController from '../CreateUserController';
-import CreateUserInteractor from '../../UseCases/User/createUser/CreateUserInteractor';
+import CreateUserInteractor from '../../../UseCases/createUser/CreateUserInteractor';
 import CreateUserControllerRequest from '../ICreateUserControllerRequest';
 import CreateUserPresenter from '../CreateUserPresenter';
-import ICreateUserRequestModel from '../../UseCases/User/createUser/ICreateUserRequestModel';
+import ICreateUserRequestModel from '../../../UseCases/createUser/ICreateUserRequestModel';
 import * as testIncludes from './CreateUserController.spec.inc';
 
 describe('#CreateUserController', () => {

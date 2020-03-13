@@ -1,9 +1,9 @@
 import ICreateUserRequestModel from '../ICreateUserRequestModel';
 import ICreateUserResponseModel from '../ICreateUserResponseModel';
-import IPresenterOuputBoundary from '../../../../../../ComponentInterfaces/InterfaceAdapters/IPresenterOuputBoundary';
-import UserEntity from '../../../../Entities/UserEntity';
-import IView from '../../../../../../ComponentInterfaces/InterfaceAdapters/IView';
-import ICreateUserViewModel from '../../../../InterfaceAdapters/ICreateUserViewModel';
+import IPresenterOuputBoundary from '../../../../../ComponentInterfaces/InterfaceAdapters/IPresenterOuputBoundary';
+import UserEntity from '../../../Entities/UserEntity';
+import IView from '../../../../../ComponentInterfaces/InterfaceAdapters/IView';
+import ICreateUserViewModel from '../../../InterfaceAdapters/createUser/ICreateUserViewModel';
 
 export function getCreateUserRequestModelTest(): ICreateUserRequestModel {
   return {

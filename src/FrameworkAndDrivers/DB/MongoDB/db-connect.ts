@@ -22,7 +22,7 @@ export default (db: string) => {
           error.message,
           '\x1b[0m'
         );
-        //          return process.exit(1);
+        // return process.exit(1);
       });
   };
 

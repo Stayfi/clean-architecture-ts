@@ -1,10 +1,10 @@
 import CreateUserInteractor from '../CreateUserInteractor';
 import ICreateUserEntityGateway from '../ICreateUserEntityGateway';
 import ICreateUserRequestModel from '../ICreateUserRequestModel';
-import IPresenterOuputBoundary from '../../../../../../ComponentInterfaces/InterfaceAdapters/IPresenterOuputBoundary';
-import IView from '../../../../../../ComponentInterfaces/InterfaceAdapters/IView';
+import IPresenterOuputBoundary from '../../../../../ComponentInterfaces/InterfaceAdapters/IPresenterOuputBoundary';
+import IView from '../../../../../ComponentInterfaces/InterfaceAdapters/IView';
 import * as testIncludes from './CreateUserInteractor.spec.inc';
-import ICreateUserViewModel from '../../../../InterfaceAdapters/ICreateUserViewModel';
+import ICreateUserViewModel from '../../../InterfaceAdapters/createUser/ICreateUserViewModel';
 
 describe('#CreateUserInteractor', () => {
 

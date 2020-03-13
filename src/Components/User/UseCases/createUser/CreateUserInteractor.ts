@@ -2,7 +2,7 @@ import ICreateUserRequestModel from './ICreateUserRequestModel';
 import ICreateUserPresenterOutputBoundary from './ICreateUserPresenterOutputBoundary';
 import ICreateUserEntityGateway from './ICreateUserEntityGateway';
 import ICreateUserResponseModel from './ICreateUserResponseModel';
-import UserEntity from '../../../Entities/UserEntity';
+import UserEntity from '../../Entities/UserEntity';
 import ICreateUserControllerInputBoundary from './ICreateUserControllerInputBoundary';
 
 export default class CreateUserInteractor

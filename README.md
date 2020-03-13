@@ -98,7 +98,7 @@ https://github.com/Stayfi/nodejs-server
 
 * Interactor execution do the business job with entity, entity gateway implementation, datas and then presente responseModel data
 ```
-./src/Components/User/UseCases/User/createUser/CreateUserInteractor.ts
+./src/Components/User/UseCases/createUser/CreateUserInteractor.ts
 ```
 
 * Presenter, execute view renderer with responseModel data mapped to viewModel data

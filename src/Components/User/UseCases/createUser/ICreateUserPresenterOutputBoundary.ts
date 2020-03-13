@@ -1,5 +1,5 @@
 // import ICreateUserView from './ICreateUserView';
-import IPresenterOuputBoundary from '../../../../../ComponentInterfaces/InterfaceAdapters/IPresenterOuputBoundary';
+import IPresenterOuputBoundary from '../../../../ComponentInterfaces/InterfaceAdapters/IPresenterOuputBoundary';
 import ICreateUserResponseModel from './ICreateUserResponseModel';
 
 export default interface ICreateUserPresenterOutputBoundary

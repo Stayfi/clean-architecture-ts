@@ -1,4 +1,4 @@
-import ICreateUserEntityGateway from '../../../../Components/User/UseCases/User/createUser/ICreateUserEntityGateway';
+import ICreateUserEntityGateway from '../../../../Components/User/UseCases/createUser/ICreateUserEntityGateway';
 import UserEntity from '../../../../Components/User/Entities/UserEntity';
 import UserModel, { IUserModel } from './user.model';
 
