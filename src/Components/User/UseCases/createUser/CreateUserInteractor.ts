@@ -30,10 +30,10 @@ export default class CreateUserInteractor
       throw new Error('CreateUserInteractor.repository.create.error');
     }
 
-    const createUserResponse: ICreateUserResponseModel =
-      this.getCreateUserResponseModelFromUser(
-        newUserEntitySaved
-      );
+    // tslint:disable-next-line: max-line-length
+    const createUserResponse: ICreateUserResponseModel = this.getCreateUserResponseModelFromUser(
+      newUserEntitySaved
+    );
     this.presenter.presente(createUserResponse);
   }
 

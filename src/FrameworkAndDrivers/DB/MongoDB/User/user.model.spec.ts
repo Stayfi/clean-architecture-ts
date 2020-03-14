@@ -3,7 +3,7 @@ import UserModel, { IUserModel } from './user.model';
 
 const mongoDBTest = 'mongodb://192.168.99.100/login_test';
 
-describe('User model', () => {
+describe('#UserModel', () => {
   beforeAll(async () => {
     await mongoose.connect(mongoDBTest, {
       useCreateIndex: true,

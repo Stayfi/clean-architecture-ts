@@ -60,17 +60,21 @@
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/jest": "^25.1.4",
+    "@types/sinon": "^7.5.2",
+    "@types/supertest": "^2.0.8",
     "concurrently": "^5.1.0",
     "jest": "^25.1.0",
     "jscpd": "^2.0.16",
     "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
+    "sinon": "^9.0.1",
+    "supertest": "^4.0.2",
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
     "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-security": "^1.16.0",
-    "tslint-plugin-prettier": "^2.1.0",
+    "tslint-plugin-prettier": "^2.2.0",
     "typescript": "^3.8.3"
   },
   "jest": {
@@ -93,6 +97,11 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "node_modules",
+      "src",
+      "src/FrameworkAndDrivers/Web/express"
+    ]
   }
 }

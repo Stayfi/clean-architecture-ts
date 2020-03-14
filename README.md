@@ -156,6 +156,8 @@ Or simply :
     $ jest
 ```
 
+![Tests results](https://raw.githubusercontent.com/Stayfi/clean-architecture-ts/develop/img/tests_results.png)
+
 ## Running coverage
 
 ```bash

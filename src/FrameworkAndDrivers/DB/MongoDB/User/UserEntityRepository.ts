@@ -4,27 +4,24 @@ import UserModel, { IUserModel } from './user.model';
 
 export default class UserEntityRepository implements ICreateUserEntityGateway {
   async findByEmail(email: string): Promise<UserEntity> {
-    let userByEmail: IUserModel | null = null;
-    try {
-      userByEmail = await UserModel.findOne({
-        email: email
-      }).exec();
-    } catch (e) {
-      console.log('err:', e);
-    }
-    if (!userByEmail) {
+    let userFindedByEmail: IUserModel | null = null;
+    userFindedByEmail = await UserModel.findOne({
+      email: email
+    })
+      .exec()
+      .catch(err => {
+        throw new Error('UserEntityRepository.findByEmail.err');
+      });
+    if (!userFindedByEmail) {
       throw new Error('user.notexist');
     }
-    return userByEmail!;
+    return userFindedByEmail!;
   }
-  async create(user: UserEntity): Promise<UserEntity> {
-    const newUser: IUserModel = new UserModel(user);
+  async create(newUserEntity: UserEntity): Promise<UserEntity> {
+    const newUser: IUserModel = new UserModel(newUserEntity);
     await newUser.save((err, user) => {
-      if (err) {
-        console.log('err:', err);
-      }
-      if (!user) {
-        throw new Error('UserEntityRepository.save.user.undefined');
+      if (err || !user) {
+        throw new Error('UserEntityRepository.save.err');
       }
     });
     const userSaved = new UserEntity(
