@@ -4,7 +4,6 @@ import cors from 'cors';
 import http from 'http';
 import morgan from 'morgan';
 import nunjucks from 'nunjucks';
-import { appEnvironment } from '../_shared/app-environment.enum';
 import { ServerInterface, ServerOptionsInterface } from './server.interface';
 import ServerRouter from './server.router.class';
 
@@ -43,7 +42,7 @@ export default class Server implements ServerInterface {
     }
   }
 
-  public stop(): void {
+  public close(): void {
     this.serverListener!.close();
   }
 
@@ -56,20 +55,12 @@ export default class Server implements ServerInterface {
   }
 
   private setAppViewEngine(): void {
-    const views_path = this.getViewPath();
-    nunjucks.configure(views_path, {
+    nunjucks.configure(__dirname + '/..', {
       autoescape: true,
       express: this.app
     });
   }
 
-  private getViewPath(): string {
-    let views_path: string = 'src/FrameworkAndDrivers/Web/express/app';
-    if (this.options.env === appEnvironment.PROD) {
-      views_path = 'dist/FrameworkAndDrivers/Web/express/app';
-    }
-    return views_path;
-  }
   private setAppMiddlewars(): void {
     if (this.options.logger && this.options.logger!.enabled) {
       this.app.use(morgan('dev'));

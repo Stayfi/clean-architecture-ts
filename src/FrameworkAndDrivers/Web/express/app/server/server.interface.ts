@@ -6,7 +6,7 @@ export interface ServerInterface {
   readonly options: ServerOptionsInterface;
   start(): boolean;
   initServer(): void;
-  stop(): void;
+  close(): void;
 }
 
 export interface ServerOptionsInterface {

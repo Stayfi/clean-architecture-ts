@@ -81,7 +81,7 @@ describe('#Server config test', function() {
       `http://localhost:${serverTest.options.port}`
     ).get('/');
     expect(res.status).toEqual(200);
-    serverTest.stop();
+    serverTest.close();
   });
 
   afterEach(function() {
