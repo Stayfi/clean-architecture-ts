@@ -4,7 +4,11 @@ import cors from 'cors';
 import http from 'http';
 import morgan from 'morgan';
 import nunjucks from 'nunjucks';
-import { ServerInterface, ServerOptionsInterface } from './server.interface';
+import {
+  ServerInterface,
+  ServerOptionsInterface,
+  IErrorCallback
+} from './server.interface';
 import ServerRouter from './server.router.class';
 
 export default class Server implements ServerInterface {
@@ -42,8 +46,8 @@ export default class Server implements ServerInterface {
     }
   }
 
-  public close(): void {
-    this.serverListener!.close();
+  public close(callBack: IErrorCallback): void {
+    this.serverListener!.close(callBack);
   }
 
   private setAppSettings(): void {

@@ -6,7 +6,7 @@ export interface ServerInterface {
   readonly options: ServerOptionsInterface;
   start(): boolean;
   initServer(): void;
-  close(): void;
+  close(callBack: IErrorCallback): void;
 }
 
 export interface ServerOptionsInterface {
@@ -15,4 +15,8 @@ export interface ServerOptionsInterface {
     enabled?: boolean;
   };
   port: number;
+}
+
+export interface IErrorCallback {
+  (err?: Error | undefined): void;
 }
