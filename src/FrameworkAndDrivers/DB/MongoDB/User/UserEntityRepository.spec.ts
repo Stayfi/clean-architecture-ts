@@ -53,7 +53,7 @@ describe('#UserEntityRepository with MongoDB connexion', () => {
   });
 
   afterAll(async () => {
-    mongoose.connection.close();
+    mongoose.connection.close(() => { });
   });
 
   it('Should create new user', async () => {

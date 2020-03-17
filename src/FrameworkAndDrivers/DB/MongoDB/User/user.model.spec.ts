@@ -13,7 +13,7 @@ describe('#UserModel', () => {
   });
 
   afterAll(async () => {
-    mongoose.connection.close();
+    mongoose.connection.close(() => { });
   });
 
   it('Should throw validation errors', () => {

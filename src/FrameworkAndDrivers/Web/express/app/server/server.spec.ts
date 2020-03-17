@@ -19,21 +19,6 @@ describe('#Server config test', function() {
     expect(serverTest.options.port).toEqual(3100);
   });
 
-  it(`Should views_path be set to 'src/FrameworkAndDrivers/Web/express/app' when not PROD_ENV`, async function() {
-    const serverAppOptions = getServerAppOptions();
-    const serverTest: Server = getInitializedServer(serverAppOptions);
-    const views_path = serverTest['getViewPath']();
-    expect(views_path).toEqual('src/FrameworkAndDrivers/Web/express/app');
-  });
-
-  it(`Should views_path be set to 'dist/FrameworkAndDrivers/Web/express/app' when Production mode`, async function() {
-    sandbox.stub(process, 'env').value({ NODE_ENV: appEnvironment.PROD });
-    const serverAppOptions = getServerAppOptions();
-    const serverTest: Server = getInitializedServer(serverAppOptions);
-    const views_path = serverTest['getViewPath']();
-    expect(views_path).toEqual('dist/FrameworkAndDrivers/Web/express/app');
-  });
-
   it(`Should console.log('√ Logger enabled') when logger enabled`, async function() {
     sandbox.stub(process, 'env').value({ LOGGER: true });
     const serverAppOptions = getServerAppOptions();
@@ -81,7 +66,7 @@ describe('#Server config test', function() {
       `http://localhost:${serverTest.options.port}`
     ).get('/');
     expect(res.status).toEqual(200);
-    serverTest.close();
+    serverTest.close(() => { });
   });
 
   afterEach(function() {
