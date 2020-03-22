@@ -68,3 +68,4 @@ config/*.env
 .jscpd
 /.coveralls.yml
 /dist
+/.VSCodeCounter
